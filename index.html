@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Budget and Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    
+    <div class="container">
+      <h1>Budget and Expense Tracker</h1>
+      <h2>Add Expense</h2>
+      <form id="expense-form">
+        <label for="expense-name">Expense Name:</label>
+        <div class="select-container">
+          <select class="select-box">
+            <option value="">CATEGORY</option>
+            <option value="first">food</option>
+            <option value="first">Dresses</option>
+            <option value="first">stationary</option>
+            <option value="first">others</option>
+          </select>
+          <div class="icon container">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+
+        </div>
+        <input
+          type="text"
+          id="expense-name"
+          placeholder="Enter expense name"
+          required
+        
+        />
+        
+        <label for="expense-amount">Amount:</label>
+        <input
+          type="number"
+          id="expense-amount"
+          placeholder="Enter expense amount"
+          required
+        />
+      <button type="submit">Add Expense</button>
+      </form>
+      <h2>Expense List</h2>
+      <ul id="expense-list">
+        <!-- Expenses will be displayed here -->
+      </ul>
+      <h2>Total Expenses: <span id="total-expenses">00.00</span></h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
